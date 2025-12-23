@@ -1,5 +1,5 @@
 from fastapi import FastAPI, WebSocket
-from api.state import ear_value, is_drowsy, attention_state, metrics_snapshot
+from api.state import ear_value, is_drowsy, attention_state, metrics_snapshot, explanation_state
 from api.schemas import DrowsinessStatus
 from api.web_socket import video_stream
 
@@ -16,7 +16,8 @@ def status():
     return {
         "ear": ear_value.value,
         "drowsy": is_drowsy.value,
-        "attention": attention_state.value.decode("utf-8")
+        "attention": attention_state.value.decode("utf-8"),
+        "explanation": explanation_state.value.decode("utf-8")
     }
 
 

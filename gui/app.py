@@ -96,12 +96,21 @@ while True:
         # Update Metrics UI
         ear_box.metric("EAR", f"{ear:.3f}")
 
-        if status_resp["drowsy"]:
+        attention = status_resp['attention']
+        
+        if attention == "NO_FACE":
+             status_box.warning("⚠️ FACE NOT DETECTED")
+             attention_box.warning("⚠️ NO FACE")
+        elif status_resp["drowsy"]:
             status_box.error("🚨 DROWSY")
+            attention_box.error("🚨 DROWSY")
         else:
             status_box.success("✅ ALERT")
-        
-        attention_box.info(f"👀 Attention: {status_resp['attention']}")
+            attention_box.success(f"👀 {attention}")
+
+        # Explanation
+        explanation = status_resp.get("explanation", "Initializing...")
+        st.info(f"💡 Analysis: {explanation}")
 
         # Update Chart with DataFrame
         df = pd.DataFrame(st.session_state.ear_history)

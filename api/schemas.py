@@ -5,3 +5,4 @@ class DrowsinessStatus(BaseModel):
     ear: float
     drowsy: bool
     attention: str
+    explanation: str

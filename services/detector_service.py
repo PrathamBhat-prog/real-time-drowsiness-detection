@@ -1,6 +1,6 @@
 import cv2
 
-from api.state import ear_value, is_drowsy, attention_state, metrics_snapshot
+from api.state import ear_value, is_drowsy, attention_state, metrics_snapshot, explanation_state
 from detectors.mediapipe_detector import MediaPipeFaceDetector
 from detectors.features.ear import compute_ear
 from services.attention_service import estimate_attention
@@ -53,6 +53,9 @@ def run_detector():
                 is_drowsy.value = False
 
             attention = estimate_attention(landmarks)
+            if is_drowsy.value:
+                attention = "DROWSY"
+            
             attention_state.value = attention.encode("utf-8")
 
             # ----- DRAW OVERLAYS -----
@@ -69,10 +72,23 @@ def run_detector():
                 cv2.putText(frame, "DROWSY!", (200, 100),
                             cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 0, 255), 3)
 
+            # ----- EXPLANATION LOGIC -----
+            if is_drowsy.value:
+                exp = f"Drowsiness detected! EAR < {EAR_THRESHOLD} for {counter} frames."
+            elif ear < EAR_THRESHOLD:
+                exp = f"Eyes closing... EAR {ear:.2f} < {EAR_THRESHOLD} ({counter}/{FRAME_LIMIT})"
+            elif attention == "LOOKING_AWAY":
+                 exp = "Distracted: Head orientation indicates looking away."
+            else:
+                 exp = f"Alert: Eye openness normal (EAR {ear:.2f}) and attentive."
+            
+            explanation_state.value = exp.encode("utf-8")
+
         else:
             ear_value.value = 0.0
             is_drowsy.value = False
             attention_state.value = b"NO_FACE"
+            explanation_state.value = b"No face detected."
 
         metrics_snapshot.clear()
         metrics_snapshot.update(metrics.snapshot())
