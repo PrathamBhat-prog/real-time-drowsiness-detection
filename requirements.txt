@@ -3,3 +3,5 @@ numpy
 mediapipe
 fastapi 
 uvicorn
+streamlit 
+requests
