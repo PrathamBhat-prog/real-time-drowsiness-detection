@@ -1,9 +1,8 @@
 import cv2
+from detectors.face_detector import FaceDetector
 
-# Load face detection model
-face_cascade = cv2.CascadeClassifier(
-    "haarcascade_frontalface_default.xml"
-)
+# Initialize face detector
+face_detector = FaceDetector("haarcascade_frontalface_default.xml")
 
 # Open webcam
 cap = cv2.VideoCapture(0)
@@ -15,19 +14,16 @@ if not cap.isOpened():
 while True:
     ret, frame = cap.read()
     if not ret:
+        print("ERROR: Failed to read frame")
         break
 
-    # Convert to grayscale (required for Haar)
+    # Convert to grayscale
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     # Detect faces
-    faces = face_cascade.detectMultiScale(
-        gray,
-        scaleFactor=1.3,
-        minNeighbors=5
-    )
+    faces = face_detector.detect_faces(gray)
 
-    # Draw rectangle around faces
+    # Draw rectangles
     for (x, y, w, h) in faces:
         cv2.rectangle(
             frame,
