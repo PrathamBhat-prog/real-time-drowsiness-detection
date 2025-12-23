@@ -4,90 +4,42 @@ import time
 import collections
 
 
-# =========================
-# Configuration
-# =========================
-API_URL = "http://127.0.0.1:8000/status"
-REFRESH_INTERVAL = 1  # seconds
-MAX_POINTS = 60       # EAR history length
+STATUS_URL = "http://127.0.0.1:8000/status"
+METRICS_URL = "http://127.0.0.1:8000/metrics"
 
-
-# =========================
-# Streamlit Page Setup
-# =========================
-st.set_page_config(
-    page_title="Real-Time Drowsiness & Attention Monitoring",
-    layout="centered"
-)
-
+st.set_page_config(page_title="Drowsiness Monitor", layout="centered")
 st.title("😴 Real-Time Drowsiness & Attention Monitoring")
-st.markdown(
-    "MediaPipe + EAR + Attention Detection  \n"
-    "Backend: FastAPI | Frontend: Streamlit"
-)
 
-st.divider()
+ear_hist = collections.deque(maxlen=60)
 
+ear_box = st.empty()
+status_box = st.empty()
+attention_box = st.empty()
+chart_box = st.empty()
+metrics_box = st.empty()
 
-# =========================
-# UI Placeholders
-# =========================
-ear_metric = st.empty()
-drowsy_status = st.empty()
-attention_status = st.empty()
-ear_chart = st.empty()
-error_box = st.empty()
-
-
-# =========================
-# EAR History Buffer
-# =========================
-ear_history = collections.deque(maxlen=MAX_POINTS)
-
-
-# =========================
-# Main Update Loop
-# =========================
 while True:
     try:
-        response = requests.get(API_URL, timeout=1)
-        data = response.json()
+        status = requests.get(STATUS_URL, timeout=1).json()
+        metrics = requests.get(METRICS_URL, timeout=1).json()
 
-        ear = data.get("ear", 0.0)
-        drowsy = data.get("drowsy", False)
-        attention = data.get("attention", "UNKNOWN")
+        ear = status["ear"]
+        ear_hist.append(ear)
 
-        # Update EAR metric
-        ear_metric.metric(
-            label="Eye Aspect Ratio (EAR)",
-            value=f"{ear:.3f}"
-        )
+        ear_box.metric("EAR", f"{ear:.3f}")
 
-        # Update drowsiness status
-        if drowsy:
-            drowsy_status.error("🚨 DROWSY DETECTED")
+        if status["drowsy"]:
+            status_box.error("🚨 DROWSY")
         else:
-            drowsy_status.success("✅ ALERT / AWAKE")
+            status_box.success("✅ ALERT")
 
-        # Update attention status
-        if attention == "ATTENTIVE":
-            attention_status.success("👀 ATTENTIVE")
-        elif attention == "LOOKING_AWAY":
-            attention_status.warning("⚠️ LOOKING AWAY")
-        elif attention == "NO_FACE":
-            attention_status.error("❌ NO FACE DETECTED")
-        else:
-            attention_status.info("ℹ️ ATTENTION UNKNOWN")
+        attention_box.info(f"👀 Attention: {status['attention']}")
 
-        # Update EAR history & chart
-        ear_history.append(ear)
-        ear_chart.line_chart(list(ear_history))
+        chart_box.line_chart(list(ear_hist))
 
-        error_box.empty()
+        metrics_box.json(metrics)
 
-    except Exception as e:
-        error_box.warning("⚠️ Waiting for API connection...")
-        time.sleep(REFRESH_INTERVAL)
-        continue
+    except Exception:
+        st.warning("Waiting for API...")
 
-    time.sleep(REFRESH_INTERVAL)
+    time.sleep(1)
