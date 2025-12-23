@@ -1,7 +1,7 @@
 import cv2
 
 
-class EyeDetector:
+class HaarEyeDetector:
     def __init__(self, cascade_path):
         self.eye_cascade = cv2.CascadeClassifier(cascade_path)
 
