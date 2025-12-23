@@ -1,0 +1,351 @@
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+INFO:     Started server process [23224]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:60379 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60380 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59765 - "WebSocket /ws/video" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51124 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51125 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51126 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51127 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51128 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51129 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51130 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51131 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51132 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51133 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51134 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51135 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51136 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51137 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51138 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51139 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51140 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51141 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51142 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51143 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51144 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51145 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51147 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51148 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51149 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51150 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51151 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51152 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51153 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51154 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51155 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51156 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51158 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51159 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51160 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51161 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51162 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51163 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51164 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51165 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51166 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51167 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51168 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51169 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51171 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51172 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51173 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50827 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50828 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50829 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50830 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50831 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50832 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50833 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50834 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50837 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50838 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50839 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50840 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50842 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50843 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50844 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50845 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50846 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50847 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50848 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50849 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50850 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50851 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50852 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50853 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50854 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50855 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50856 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50857 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50858 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50859 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50860 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50861 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50862 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50863 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50864 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50865 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50866 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50867 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50868 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50869 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50870 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50871 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50873 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50874 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50875 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50877 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50878 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50879 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50880 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50881 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50882 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50883 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50884 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50885 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50886 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50887 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50888 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56544 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56545 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56546 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56547 - "GET /metrics HTTP/1.1" 200 OK
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\uvicorn\protocols\websockets\websockets_impl.py", line 329, in asgi_send
+    await self.send(data)  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\websockets\legacy\protocol.py", line 620, in send
+    await self.ensure_open()
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\websockets\legacy\protocol.py", line 930, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedOK: received 1001 (going away); then sent 1001 (going away)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\websockets.py", line 86, in send
+    await self._send(message)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\_exception_handler.py", line 39, in sender
+    await send(message)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\uvicorn\protocols\websockets\websockets_impl.py", line 342, in asgi_send
+    raise ClientDisconnected from exc
+uvicorn.protocols.utils.ClientDisconnected
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Projects\real-time-drowsiness-detection\api\web_socket.py", line 18, in video_stream
+    await websocket.send_bytes(buffer.tobytes())
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\websockets.py", line 169, in send_bytes
+    await self.send({"type": "websocket.send", "bytes": data})
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\websockets.py", line 89, in send
+    raise WebSocketDisconnect(code=1006)
+starlette.websockets.WebSocketDisconnect
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\uvicorn\protocols\websockets\websockets_impl.py", line 244, in run_asgi
+    result = await self.app(self.scope, self.asgi_receive, self.asgi_send)  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\fastapi\applications.py", line 1135, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\routing.py", line 364, in handle
+    await self.app(scope, receive, send)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\fastapi\routing.py", line 145, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\fastapi\routing.py", line 142, in app
+    await func(session)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\fastapi\routing.py", line 509, in app
+    await dependant.call(**solved_result.values)
+  File "D:\Projects\real-time-drowsiness-detection\api\app.py", line 30, in websocket_video
+    await video_stream(websocket)
+  File "D:\Projects\real-time-drowsiness-detection\api\web_socket.py", line 22, in video_stream
+    await websocket.close()
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\websockets.py", line 181, in close
+    await self.send({"type": "websocket.close", "code": code, "reason": reason or ""})
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\websockets.py", line 98, in send
+    raise RuntimeError('Cannot call "send" once a close message has been sent.')
+RuntimeError: Cannot call "send" once a close message has been sent.
+INFO:     connection closed
+INFO:     127.0.0.1:59225 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51737 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51738 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64845 - "WebSocket /ws/video" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:64848 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64849 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64850 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64851 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64852 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64853 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64854 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64855 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64856 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64857 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55334 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55335 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55337 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55338 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55339 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55340 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55343 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55344 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55347 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55348 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55349 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55350 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55351 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55352 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55353 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55354 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55355 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55356 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55357 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55358 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53951 - "GET /status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53952 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     connection closed
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\websockets\legacy\protocol.py", line 945, in transfer_data
+    message = await self.read_message()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\websockets\legacy\protocol.py", line 1015, in read_message
+    frame = await self.read_data_frame(max_size=self.max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\websockets\legacy\protocol.py", line 1090, in read_data_frame
+    frame = await self.read_frame(max_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\websockets\legacy\protocol.py", line 1147, in read_frame
+    frame = await Frame.read(
+            ^^^^^^^^^^^^^^^^^
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\websockets\legacy\framing.py", line 98, in read
+    mask_bits = await reader(4)
+                ^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST PROTOCOL\anaconda3\Lib\asyncio\streams.py", line 722, in readexactly
+    raise self._exception
+  File "C:\Users\GHOST PROTOCOL\anaconda3\Lib\asyncio\proactor_events.py", line 305, in _loop_reading
+    self._read_fut = self._loop._proactor.recv_into(self._sock, self._data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST PROTOCOL\anaconda3\Lib\asyncio\windows_events.py", line 486, in recv_into
+    ov.WSARecvInto(conn.fileno(), buf, flags)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\uvicorn\protocols\websockets\websockets_impl.py", line 329, in asgi_send
+    await self.send(data)  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\websockets\legacy\protocol.py", line 620, in send
+    await self.ensure_open()
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\websockets\legacy\protocol.py", line 921, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedError: no close frame received or sent
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\websockets.py", line 86, in send
+    await self._send(message)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\_exception_handler.py", line 39, in sender
+    await send(message)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\uvicorn\protocols\websockets\websockets_impl.py", line 342, in asgi_send
+    raise ClientDisconnected from exc
+uvicorn.protocols.utils.ClientDisconnected
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Projects\real-time-drowsiness-detection\api\web_socket.py", line 18, in video_stream
+    await websocket.send_bytes(buffer.tobytes())
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\websockets.py", line 169, in send_bytes
+    await self.send({"type": "websocket.send", "bytes": data})
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\websockets.py", line 89, in send
+    raise WebSocketDisconnect(code=1006)
+starlette.websockets.WebSocketDisconnect
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\uvicorn\protocols\websockets\websockets_impl.py", line 244, in run_asgi
+    result = await self.app(self.scope, self.asgi_receive, self.asgi_send)  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\fastapi\applications.py", line 1135, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\routing.py", line 364, in handle
+    await self.app(scope, receive, send)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\fastapi\routing.py", line 145, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\fastapi\routing.py", line 142, in app
+    await func(session)
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\fastapi\routing.py", line 509, in app
+    await dependant.call(**solved_result.values)
+  File "D:\Projects\real-time-drowsiness-detection\api\app.py", line 30, in websocket_video
+    await video_stream(websocket)
+  File "D:\Projects\real-time-drowsiness-detection\api\web_socket.py", line 22, in video_stream
+    await websocket.close()
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\websockets.py", line 181, in close
+    await self.send({"type": "websocket.close", "code": code, "reason": reason or ""})
+  File "D:\Projects\real-time-drowsiness-detection\venv2\Lib\site-packages\starlette\websockets.py", line 98, in send
+    raise RuntimeError('Cannot call "send" once a close message has been sent.')
+RuntimeError: Cannot call "send" once a close message has been sent.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23224]

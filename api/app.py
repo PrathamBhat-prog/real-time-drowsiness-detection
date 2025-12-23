@@ -1,6 +1,7 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, WebSocket
 from api.state import ear_value, is_drowsy, attention_state, metrics_snapshot
 from api.schemas import DrowsinessStatus
+from api.web_socket import video_stream
 
 app = FastAPI(title="Drowsiness Detection API")
 
@@ -22,3 +23,8 @@ def status():
 @app.get("/metrics")
 def metrics():
     return dict(metrics_snapshot)
+
+
+@app.websocket("/ws/video")
+async def websocket_video(websocket: WebSocket):
+    await video_stream(websocket)

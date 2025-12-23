@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Live Drowsiness Stream</title>
+</head>
+
+<body>
+    <h2>Live Video Stream</h2>
+    <img id="video" width="640" />
+
+    <script>
+        const img = document.getElementById("video");
+        const ws = new WebSocket("ws://127.0.0.1:8000/ws/video");
+        ws.binaryType = "blob";
+
+        ws.onmessage = (event) => {
+            img.src = URL.createObjectURL(event.data);
+        };
+    </script>
+</body>
+
+</html>
