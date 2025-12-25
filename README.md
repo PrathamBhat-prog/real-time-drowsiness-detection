@@ -133,6 +133,8 @@ json
   "explanation": "Eye openness within normal range"
 }
 
+---
+
 ## WebSocket Video Streaming
 
 The system supports live video streaming via WebSockets.
@@ -144,6 +146,8 @@ Frames are streamed in real time to a browser-based client.
 The WebSocket server runs alongside the REST API within the same FastAPI application.
 
 This enables real-time visualization without relying on OpenCV GUI windows.
+
+---
 
 ## Streamlit Dashboard
 
@@ -163,6 +167,8 @@ Live metrics output
 
 The GUI consumes data directly from the FastAPI backend.
 
+---
+
 ### Tech Stack
 
 Python
@@ -178,6 +184,8 @@ WebSockets
 Streamlit
 
 NumPy
+
+---
 
 ### How to Run the Project
 
