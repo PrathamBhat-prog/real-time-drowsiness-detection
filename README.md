@@ -125,7 +125,7 @@ GET /health
 GET /status
 
 **Sample Response**
-```json
+json
 {
   "ear": 0.28,
   "drowsy": false,
@@ -133,7 +133,9 @@ GET /status
   "explanation": "Eye openness within normal range"
 }
 
-### WebSocket Video Streaming
+---
+
+## WebSocket Video Streaming
 
 The system supports live video streaming via WebSockets.
 
@@ -145,7 +147,9 @@ The WebSocket server runs alongside the REST API within the same FastAPI applica
 
 This enables real-time visualization without relying on OpenCV GUI windows.
 
-### Streamlit Dashboard
+---
+
+## Streamlit Dashboard
 
 The Streamlit GUI provides a real-time dashboard that displays:
 
@@ -163,6 +167,8 @@ Live metrics output
 
 The GUI consumes data directly from the FastAPI backend.
 
+---
+
 ### Tech Stack
 
 Python
@@ -178,6 +184,8 @@ WebSockets
 Streamlit
 
 NumPy
+
+---
 
 ### How to Run the Project
 
