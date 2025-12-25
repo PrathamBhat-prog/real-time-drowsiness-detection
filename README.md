@@ -203,3 +203,9 @@ python run_api_threaded.py
 
 streamlit run gui/app.py
 
+## Project pictures
+
+![](assets/images/attentive.png)
+![](assets/images/drowsy.png)
+![](assets/images/graph.png)
+![](assets/images/metrics.png)
